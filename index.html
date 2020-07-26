@@ -1,0 +1,624 @@
+<!-- <?php
+include 'db.php'; 
+if (isset($_POST['submit'])) {
+  $insert = "INSERT INTO `contact`(`name`, `email`, `message`) VALUES ('".$_POST['name']."', '".$_POST['email']."', '".$_POST['message']."')";
+  $result = mysql_query($insert, $con);
+  if ($result) {
+    echo "<script>alert('successful')</script>";
+  }
+}
+ ?> -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Sonal Choudhary</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <!-- Favicons -->
+  <!-- <link href="img/favicon.png" rel="icon"> -->
+  <!-- <link href="img/apple-touch-icon.png" rel="apple-touch-icon"> -->
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/venobox/venobox.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+  <script src="lib/jquery/jquery.min.js"></script>
+  <!-- <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"> -->
+  <link rel="icon" href="img/favicon.ico" type= "image/x-icon">
+
+  <!-- =======================================================
+    Theme Name: TheEvent
+    Theme URL: https://bootstrapmade.com/theevent-conference-event-bootstrap-template/
+    Author: BootstrapMade.com
+    License: https://bootstrapmade.com/license/
+  ======================================================= -->
+
+
+  <style type="text/css" media="screen">
+    #portfolio .description p
+    {
+      font-size: 15px;  
+      text-align: justify;
+    }
+    #portfolio .description ol li
+    {
+      font-size: 14px;
+    }
+
+    #education ul i
+    {
+      font-size: 20px;
+    }
+
+    #education ul span
+    {
+      font-size: 15px;
+      margin-left: 20px;
+    }
+
+    #subscribe .contactme i
+    {
+     font-size: 30px;
+     color: white;
+    }
+    #subscribe .contactme span
+    {
+     font-size: 15px;
+     color: white;
+     margin-left: 15px;
+     /* margin-top: -15px; */
+
+    }
+
+
+s
+{
+  background-image: url('img/back.png');
+  color: red;
+}
+
+
+  </style>
+</head>
+
+<body class="s">
+
+  <!--==========================
+    Header
+  ============================-->
+  <header id="header">
+    <div class="container">
+
+      <div id="logo" class="pull-left">
+        <!-- Uncomment below if you prefer to use a text logo -->
+        <!-- <h1><a href="#main">C<span>o</span>nf</a></h1>-->
+        
+      </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li class="menu-active"><a href="#intro">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#portfolio">Projects</a></li>
+          <li><a href="Sonal Choudhary.pdf">Resume</a></li>
+          <li><a href="#subscribe">Contact</a></li>
+          
+        </ul>
+      </nav><!-- #nav-menu-container -->
+    </div>
+  </header><!-- #header -->
+
+  <!--==========================
+    Intro Section
+  ============================-->
+  <section id="intro">
+    <div class="intro-container wow fadeIn">
+      <h1 class="mb-4 pb-0">Hello! I'm Sonal Choudhary<br></h1>
+      <p class="mb-4 pb-0">"Sometimes it pays to stay in bed on Monday, rather than spending the rest of the week debugging Monday's code"</p>
+      
+      <a href="#about" class="about-btn scrollto">View My Work</a>
+    </div>
+  </section>
+
+  <main id="main">
+
+    <!--==========================
+      About Section
+    ============================-->
+    <section id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8">
+            <h2><b>About Me</b> </h2>
+            
+            <br>
+            <br>
+            <p class="mb-4 pb-0">
+            I'm a PHP Web Developer. Worked on static or dynamic projects for corporates and individual too. I have serious passion for developing dynamic websites and creating intuitive & responsive websites.
+            </p>
+            <br>
+          </div>
+
+          <div class="col-md-4">
+          <img src="img/sonal5.jpg"  class="img-circle" alt="" style="height: 250px; width: 250px">
+        </div>
+      </div>
+    </div>
+    </section>
+
+    <!--==========================
+      Speakers Section
+    ============================-->
+    <br>
+    <br> <br>
+    <br>
+    <section id="skills" class="wow fadeInUp visible-lg visible-md" >
+      <div class="container">
+        <div class="section-header">
+          <h2>Skills</h2>
+          
+        </div>
+
+        <div class="row">
+          <div class="col-md-2">
+          <img src="img/html5.png" alt="" style="height: 100px">
+          <br>
+          <br>
+          <h4 style="padding-left: 15px"><b>HTML5</b></h4>
+        </div>
+        <div class="col-md-2 ">
+          <img src="img/css3.png" alt="" style="height: 100px">
+          <br>
+          <br>
+          <h4 style="padding-left: 15px"><b>CSS3</b></h4>
+        </div>
+        <div class="col-md-2">
+          <img src="img/bootstrap.png" alt="" style="height: 100px">
+          <br>
+          <br>
+          <h4 style="padding-left: 15px"><b>Bootstrap</b></h4>
+        </div>
+        <div class="col-md-2">
+          <img src="img/javascript.png" alt="" style="height: 100px">
+          <br>
+          <br>
+          <h4 style="padding-left: 15px"><b>Javascript</b></h4>
+        </div>
+        <div class="col-md-2">
+          <img src="img/ajax.png" alt="" style="height: 100px; width: 150px">
+          <br>
+          <br>
+          <h4 style="padding-left: 15px"><b>AJAX</b></h4>
+        </div>
+        <div class="col-md-2">
+          <img src="img/jquery.png" alt="" style="height: 100px; padding-left: 25px">
+          <br>
+          <br>
+          <h4 style="padding-left: 45px"><b>jQuery</b></h4>
+        </div>
+      </div>
+      <br>
+      <div class="row">
+      <div class="col-md-2">
+          <img src="img/php.png" alt="" style="height: 100px">
+          <br>
+          <br>
+          <h4 style="padding-left: 15px"><b>PHP</b></h4>
+        </div>
+        <div class="col-md-2">
+          <img src="img/mysql.png" alt="" style="height: 100px">
+          <br>
+          <br>
+          <h4 style="padding-left: 15px"><b>MySQL</b></h4>
+        </div>
+      </div>
+      </div>
+    </section>
+
+
+
+     <section id="skills" class="wow fadeInUp visible-sm visible-xs">
+      <div class="container">
+        <div class="section-header">
+          <h2>Skills</h2>
+          
+        </div>
+
+        <div class="row">
+            <div class="col-xs-6">
+            <img src="img/html5.png" alt="" style="height: 100px">
+            <br>
+            <br>
+            <h4 style="padding-left: 15px"><b>HTML5</b></h4>
+          </div>
+          <div class="col-xs-6">
+            <img src="img/css3.png" alt="" style="height: 100px">
+            <br>
+            <br>
+            <h4 style="padding-left: 15px"><b>CSS3</b></h4>
+          </div>
+       </div>
+
+       <div class="row">
+        <div class="col-xs-6">
+          <img src="img/bootstrap.png" alt="" style="height: 100px">
+          <br>
+          <br>
+          <h4 style="padding-left: 15px"><b>Bootstrap</b></h4>
+        </div>
+        <div class="col-xs-6">
+          <img src="img/javascript.png" alt="" style="height: 100px">
+          <br>
+          <br>
+          <h4 style="padding-left: 15px"><b>Javascript</b></h4>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-6">
+          <img src="img/ajax.png" alt="" style="height: 100px; width: 150px">
+          <br>
+          <br>
+          <h4 style="padding-left: 15px"><b>AJAX</b></h4>
+        </div>
+        <div class="col-xs-6">
+          <img src="img/jquery.png" alt="" style="height: 100px; padding-left: 25px">
+          <br>
+          <br>
+          <h4 style="padding-left: 45px"><b>jQuery</b></h4>
+        </div>
+      </div>
+      <br>
+      <div class="row">
+      <div class="col-xs-6">
+          <img src="img/php.png" alt="" style="height: 100px">
+          <br>
+          <br>
+          <h4 style="padding-left: 15px"><b>PHP</b></h4>
+        </div>
+        <div class="col-xs-6">
+          <img src="img/mysql.png" alt="" style="height: 100px">
+          <br>
+          <br>
+          <h4 style="padding-left: 15px"><b>MySQL</b></h4>
+        </div>
+      </div>
+      </div>
+    </section>
+    <br>
+    <br>
+    <br>
+    <br>
+   <section id="portfolio" class="">
+      <div class="container wow ">
+        <div class="section-header">
+           <h2><center>Project</center></h2>
+        </div>
+         <br>
+         <br>
+         <div class="row" >
+               <div class="col-md-6">
+                   <div class="container">
+                      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                          <li data-target="#myCarousel" data-slide-to="1"></li>
+                          <li data-target="#myCarousel" data-slide-to="2"></li>
+                        </ol>
+
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner">
+
+                          <div class="item active">
+                            <img src="img/project/emagazine1.png" alt="Los Angeles" style="width:100%;">
+                            <div class="carousel-caption">
+                              <!-- <h3>Home Page</h3> -->
+                              <p></p>
+                            </div>
+                          </div>
+
+                          <div class="item">
+                            <img src="img/project/emagazine2.png" alt="Chicago" style="width:100%;">
+                            <div class="carousel-caption">
+                              <!-- <h3>Latest Story</h3> -->
+                              <p></p>
+                            </div>
+                          </div>
+                        
+                          <div class="item">
+                            <img src="img/project/emagazine3.png" alt="New York" style="width:100%;">
+                            <div class="carousel-caption">
+                              <!-- <h3>Category page</h3> -->
+                              <!-- <p>We love the Big Apple!</p> -->
+                            </div>
+                          </div>
+                      
+                        </div>
+
+                        <!-- Left and right controls -->
+                        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                          <span class="glyphicon glyphicon-chevron-left"></span>
+                          <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                          <span class="glyphicon glyphicon-chevron-right"></span>
+                          <span class="sr-only">Next</span>
+                        </a>
+                      </div>
+                   </div>
+               </div>
+               <div class="col-md-6 description">
+               <h2><b><a href="https://sonalchoudhary.in/scribblebyte/index.php" title="">E-magazine (Scribble Byte)</a></b></h2>
+               <p style="">The E-magazine will basically cover all fields such as News, lifestyle, Technology, Sports and health tips as well. 
+               It is a blend of all flavors for leisure or information purpose. 
+
+               </p>
+               <h3>Accomplishments - </h3>
+               <ol>
+                 <li style="">Demo site for PHP MySQL</li>
+                 <li>Responsive Design.</li>
+                 <li> JavaScript input validation.</li>
+                 <li> Google Map Integration.</li>
+                 <!-- li>Google Map</li> -->
+               </ol>
+               <h4>Visit here  - <a href="https://sonalchoudhary.in/scribblebyte/index.php" title="">https://sonalchoudhary.in/scribblebyte/index.php</a></h4>
+               <!--<h4>Visit here  - <a href="#" title="">Not Available</a></h4>-->
+               </div>     
+         </div>
+
+
+         <br>
+         <br>
+         <div class="row" >
+               <div class="col-md-6">
+                   <div class="container">
+                      <div id="myCarousel2" class="carousel slide" data-ride="carousel">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                          <li data-target="#myCarousel2" data-slide-to="0" class="active"></li>
+                          <li data-target="#myCarousel2" data-slide-to="1"></li>
+                          <li data-target="#myCarousel2" data-slide-to="2"></li>
+                        </ol>
+
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner">
+
+                          <div class="item active">
+                            <img src="img/project/jccwa1.png" alt="Los Angeles" style="width:100%;">
+                            <div class="carousel-caption">
+                              <!-- <h3>Los Angeles</h3> -->
+                              <!-- <p>LA is always so much fun!</p> -->
+                            </div>
+                          </div>
+
+                          <div class="item">
+                            <img src="img/project/jccwa2.png" alt="Chicago" style="width:100%;">
+                            <div class="carousel-caption">
+                              <!-- <h3>Chicago</h3> -->
+                              <!-- <p>Thank you, Chicago!</p> -->
+                            </div>
+                          </div>
+                        
+                          <div class="item">
+                            <img src="img/project/jccwa3.png" alt="New York" style="width:100%;">
+                            <div class="carousel-caption">
+                              <!-- <h3>New York</h3> -->
+                              <!-- <p>We love the Big Apple!</p> -->
+                            </div>
+                          </div>
+                      
+                        </div>
+
+                        <!-- Left and right controls -->
+                        <a class="left carousel-control" href="#myCarousel2" data-slide="prev">
+                          <span class="glyphicon glyphicon-chevron-left"></span>
+                          <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control" href="#myCarousel2" data-slide="next">
+                          <span class="glyphicon glyphicon-chevron-right"></span>
+                          <span class="sr-only">Next</span>
+                        </a>
+                      </div>
+                   </div>
+               </div>
+               <div class="col-md-6 description">
+               <h2><b><a href="http://www.jccwa.co.in/" title="">Jila Civil Contractor Walfare Association</a></b></h2>
+               <p style="">The main goal of this organization is Understanding the plans and orders received from time to time by governance, administration and reaching out to poor laborers and contractors. 
+               </p>
+               <h3>Accomplishments –</h3>
+               <ol>
+                 <li style="">Responsive Design.</li>
+                 <li>Google Map Integration.</li>
+                 <li>Dual Language Support (English & Hindi).</li>
+                 <li>JavaScript input validation.</li>
+                 <!-- <li>Google Map Integration</li> -->
+               </ol>
+
+               <h4>Visit here  - <a href="http://www.jccwa.co.in/" title="">http://www.jccwa.co.in/</a></h4>
+               </div>     
+         </div>
+
+         <br>
+         <br>
+
+
+         <div class="row" >
+               <div class="col-md-6">
+                   <div class="container">
+                      <div id="myCarousel3" class="carousel slide" data-ride="carousel">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                          <li data-target="#myCarousel3" data-slide-to="0" class="active"></li>
+                          <li data-target="#myCarousel3" data-slide-to="1"></li>
+                          <li data-target="#myCarousel3" data-slide-to="2"></li>
+                        </ol>
+
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner">
+
+                          <div class="item active">
+                            <img src="img/project/tvct1.png" alt="Los Angeles" style="width:100%;">
+                            <div class="carousel-caption">
+                              <!-- <h3>Los Angeles</h3> -->
+                              <!-- <p>LA is always so much fun!</p> -->
+                            </div>
+                          </div>
+
+                          <div class="item">
+                            <img src="img/project/tvct2.png" alt="Chicago" style="width:100%;">
+                            <div class="carousel-caption">
+                              <!-- <h3>Chicago</h3> -->
+                              <!-- <p>Thank you, Chicago!</p> -->
+                            </div>
+                          </div>
+                        
+                          <div class="item">
+                            <img src="img/project/tvct3.png" alt="New York" style="width:100%;">
+                            <div class="carousel-caption">
+                              <!-- <h3>New York</h3> -->
+                              <!-- <p>We love the Big Apple!</p> -->
+                            </div>
+                          </div>
+                      
+                        </div>
+
+                        <!-- Left and right controls -->
+                        <a class="left carousel-control" href="#myCarousel3" data-slide="prev">
+                          <span class="glyphicon glyphicon-chevron-left"></span>
+                          <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control" href="#myCarousel3" data-slide="next">
+                          <span class="glyphicon glyphicon-chevron-right"></span>
+                          <span class="sr-only">Next</span>
+                        </a>
+                      </div>
+                   </div>
+               </div>
+               <div class="col-md-6 description">
+               <h2><b><a href="https://sonalchoudhary.in/tvct/index.html" title="">Triveni College Of Technology</a></b></h2>
+               <p style="">It permits us to approach the entire knowledge regarding the college, employees, students, faculties etc.                           
+               </p>
+               <h3>Accomplishments –</h3>
+               <ol>
+                 <li style="">Responsive Design.</li>
+                 <li>Google Map Integration.</li>
+                 <li>JavaScript input validation.</li>
+                 <!-- <li>Google Map Integration</li> -->
+               </ol>
+
+               <!--<h4>Visit here  - <a href="https://sonalchoudhary.in/tvct/index.html" title="">https://sonalchoudhary.in/tvct/index.html</a></h4>-->
+               <h4>Visit here  - <a href="#" title="">Not Available</a></h4>
+               </div>     
+         </div>
+
+      </div>
+
+         
+   </section>
+
+    <br>
+    <br>
+
+    <section id="education">
+      <div class="container">
+        <div class="section-header">
+          <h2>Education </h2>
+        </div>
+        <ul>
+          <i class="fa fa-graduation-cap" aria-hidden="true"></i><span>Bachelors of Engineering in Computer Science & Engineering with 72% from M. M. College Of Technology, Raipur Chhattisgarh.</span><br><br>
+          <i class="fa fa-graduation-cap" aria-hidden="true"></i><span>HSSC from Gurukul Higher Secondary School, Birgaon Raipur with 77% marks in 2013 from Chhattisgarh Board of Secondary Education, Raipur.</span><br><br>
+          <i class="fa fa-graduation-cap" aria-hidden="true"></i><span>HSC from Mahatma Gandhi Higher Secondary School, Birgaon Raipur with 70% marks in 2011 from Chhattisgarh Board of Secondary Education, &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Raipur.</span>
+        </ul>
+      </div>
+    </section>
+    <br>
+    <br>
+    <br>
+    <br>
+    <section id="subscribe">
+      <div class="container wow fadeInUp">
+        <div class="section-header">
+          <h2>Contact</h2>
+          <p>Get in touch</p>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <form method="POST" action="#">
+              <div class="form-row justify-content-center">
+                <div class="col-auto">
+                  <input type="text" class="form-control" name="name" placeholder="Enter your Name">
+                  <br>
+                  <input type="email" class="form-control" name="email" placeholder="Enter your Email">
+                  <br>
+                  <textarea class="form-control" name="message" rows="9" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                  <br>
+                  <button type="submit" class="form-control " name="submit">Submit</button>
+                </div>
+                <div class="col-auto">
+                  
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="col-md-6 contactme">
+          <i class="fa fa-envelope" aria-hidden="true"></i><span><a target="_blank" href="mailto:sonalchoudhary2804@gmail.com" title="" style="color: white">sonalchoudhary2804@gmail.com</a></span><br><br>
+
+          <i class="fa fa-facebook" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span><a target="_blank" href="https://www.facebook.com/sonal.choudhary.9277" title="" style="color: white">https://www.facebook.com/</a></span><br><br>
+
+          <i class="fa fa-phone" aria-hidden="true"></i>&nbsp;<span>7974275418</span><br><br>
+
+
+          <i class="fa fa-whatsapp" aria-hidden="true"></i><span><a target="_blank" alt="" href="https://api.whatsapp.com/send?phone=917974275418" class="hoverline">+91 9685109502</a></span><br><br>
+
+          <i class="fa fa-home" aria-hidden="true"></i><span>CGHB Colony, Birgaon, Raipur Chhattisgarh</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+   
+
+  <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
+
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/superfish/hoverIntent.js"></script>
+  <script src="lib/superfish/superfish.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/venobox/venobox.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <!-- Contact Form JavaScript File -->
+  <script src="contactform/contactform.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>
